@@ -1,0 +1,94 @@
+header {
+    height: 100px;
+    width: 100%;
+    background: url("../images/header-bg.jpeg") no-repeat center center;
+    background-size: cover;
+    position: fixed;
+}
+
+#logo-container {
+    float: left;
+    margin-left: 150px;
+    vertical-align: middle;
+}
+
+#logo {
+    width: 170px;
+}
+
+#logo img {
+    width: 100%;
+}
+
+#header-right-container {
+    float: right;
+    font-family: Roboto, sans-serif;
+
+    text-align: right;
+    margin-right: 100px;
+    margin-top: 20px;
+}
+
+#nav-container{
+    margin-top: 28px;
+}
+
+#navbar {
+    align-items: right;
+}
+
+#navbar li {
+    font-size: 14px;
+    display: inline;
+    margin-left: 28px;
+}
+
+#navbar a {
+    text-decoration: none;
+    color: black;
+}
+
+#hamburger-menu {
+    width: 40px;
+    height: 32px;
+    display:none;
+    float: right;
+}
+
+#hamburger-menu:hover {
+    cursor: pointer;
+}
+
+#hamburger-menu span {
+    display: block;
+    border-radius: 3px;
+    background-color: black;
+    height: 4px;
+    width: 30px;
+    margin: 4px;
+}
+
+@media screen and (max-width: 1150px) {
+
+    #navbar li {
+        margin-left: 10px;
+    }
+
+    #logo-container {
+        margin-left: 60px;
+    }
+
+    #header-right-container {
+        margin-right: 40px;
+    }
+}
+
+@media screen and (max-width: 860px) {
+    #navbar {
+        display: none;
+    }
+    #hamburger-menu {
+        display: block;
+    }
+}
+
