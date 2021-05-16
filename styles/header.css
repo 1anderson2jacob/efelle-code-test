@@ -4,6 +4,7 @@ header {
     background: url("../images/header-bg.jpeg") no-repeat center center;
     background-size: cover;
     position: fixed;
+    z-index: 1000;
 }
 
 #logo-container {
@@ -68,7 +69,7 @@ header {
     margin: 4px;
 }
 
-@media screen and (max-width: 1150px) {
+@media screen and (max-width: 1160px) {
 
     #navbar li {
         margin-left: 10px;
@@ -83,7 +84,7 @@ header {
     }
 }
 
-@media screen and (max-width: 860px) {
+@media screen and (max-width: 880px) {
     #navbar {
         display: none;
     }
