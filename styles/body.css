@@ -5,3 +5,108 @@
 html {
     box-sizing: border-box;
 }
+
+#banner {
+    margin-top: 100px;
+    background: url("../images/banner.jpg") no-repeat;
+    background-color: rgba(0,0,0,1);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position-x: center;
+
+    width: 100%;
+    height: calc(100vh + 100px);
+    float: left;
+}
+
+.brightness-filter {
+    height: 100%;
+    background-color: rgba(0,0,0,0.2);
+}
+
+#banner-child-container {
+    position: absolute;
+    top: 80%;
+    transform: translateY(-80%);
+    vertical-align: middle;
+    margin-left: 120px;
+}
+
+.banner-span {
+    text-shadow:1px 1px 15px black;
+    display: block;
+}
+
+
+#banner-span-1 {
+    font-family: Architects Daughter, sans-serif;
+    font-size: 40px;
+    color: white;
+
+    margin-bottom: 15px;
+}
+
+#banner-span-2 {
+    font-family: Roboto, sans-serif;
+    font-size: 60px;
+    color: white;
+    font-weight: 800;
+    letter-spacing: 3px;
+}
+
+#banner-span-2::after {
+    content: " ";
+    border: 1px solid white;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    display: block;
+    max-width: 75px;
+}
+
+#banner-span-3 {
+    font-family: Roboto, sans-serif;
+    font-size: 18px;
+    color: white;
+    margin-bottom: 45px;
+}
+
+#banner-btn {
+    background-color: #446286;
+    position: relative;
+    line-height: 48px;
+    text-align: center;
+}
+
+#banner a {
+    position: absolute;
+    width: 156px;
+    height: 48px;
+
+    color: white;
+    text-decoration: none;
+    font-family: roboto, sans-serif;
+    font-size: 12px;
+    text-align: center;
+}
+
+@media screen and (max-width: 1160px) {
+    #banner-child-container {
+        margin-left: 60px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    #banner-span-1 {
+        font-size: 26px;
+    }
+
+    #banner-span-2 {
+        font-size: 40px;
+    }
+
+    #banner-span-3 {
+        font-size: 12px;
+    }
+}
