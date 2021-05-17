@@ -32,6 +32,10 @@ header {
     margin-top: 20px;
 }
 
+#phone-container {
+    text-decoration: none;
+}
+
 #nav-container{
     margin-top: 28px;
 }
