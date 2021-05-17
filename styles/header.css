@@ -1,4 +1,6 @@
 header {
+    left: 0;
+    top: 0;
     height: 100px;
     width: 100%;
     background: url("../images/header-bg.jpeg") no-repeat center center;
@@ -58,6 +60,7 @@ header {
 
 #hamburger-menu:hover {
     cursor: pointer;
+    border: 1px solid white;
 }
 
 #hamburger-menu span {
