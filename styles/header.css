@@ -49,6 +49,31 @@ header {
 #navbar a {
     text-decoration: none;
     color: black;
+
+    display: inline-block;
+    position: relative;
+    padding-bottom: 5px;
+}
+
+#navbar a:hover {
+    color: #9E0A29;
+}
+
+#navbar a:after {
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #9E0A29;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+
+#navbar a:hover:after { 
+    width: 100%; 
+    left: 0; 
 }
 
 #hamburger-menu {
@@ -58,11 +83,6 @@ header {
     float: right;
 }
 
-#hamburger-menu:hover {
-    cursor: pointer;
-    border: 1px solid white;
-}
-
 #hamburger-menu span {
     display: block;
     border-radius: 3px;
@@ -70,6 +90,14 @@ header {
     height: 4px;
     width: 30px;
     margin: 4px;
+}
+
+#hamburger-menu:hover {
+    cursor: pointer;
+}
+
+#hamburger-menu:hover > span {
+    background-color: #9E0A29;
 }
 
 @media screen and (max-width: 1160px) {
