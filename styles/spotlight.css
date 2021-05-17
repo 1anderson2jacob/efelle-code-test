@@ -1,0 +1,138 @@
+section {
+    height: 680px;
+    background: url("../images/woodgrain-bg.jpeg") no-repeat center center;
+    background-size: cover;
+
+    padding-top: 85px;
+}
+
+.center-text {
+    text-align: center;
+}
+
+h1 {
+    font-family: Roboto, sans-serif;
+    font-size: 31px;
+
+    margin-bottom: 15px;
+}
+
+h2 {
+    font-family: Roboto, sans-serif;
+    font-size: 21px;
+
+    margin-bottom: 15px;
+}
+
+.center-text hr {
+    border: 1px solid black;
+    width: 30px;
+}
+
+#spotlight-container {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.spotlight-block {
+    width: 22%;
+    min-width: 150px;
+    margin: 16px;
+    position: relative;
+}
+
+.sb-circle-container {
+    width: 50%;
+    padding-bottom: 110%;
+    position: relative;
+}
+
+.spotlight-circle {
+    position: absolute;
+    top: 22.5%;
+    left: 40%;
+    width: 120%;
+    height: 55%;
+    border-radius: 50%;
+    background-color: rgba(0,0,0,0.4);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+  
+.spotlight-circle span {
+    font-family: Teko, sans-serif;
+    font-size: 30px;
+    font-weight: 200;
+    letter-spacing: 1px;
+    color: white;
+}
+
+.spotlight-circle hr {
+    border: 1px solid white;
+    width: 30px;
+}
+
+#sb-kitchens {
+    background: url("../images/kitchens.jpeg") no-repeat left center;
+    background-size: cover;
+}
+
+#sb-bathrooms {
+    background: url("../images/bathrooms.jpeg") no-repeat center center;
+    background-size: cover;
+}
+
+#sb-remodels {
+    background: url("../images/remodels.jpeg") no-repeat center center;
+    background-size: cover;
+}
+
+#sb-decks {
+    background: url("../images/decks.jpeg") no-repeat center center;
+    background-size: cover;
+}
+
+@media screen and (max-width: 1160px) {
+    .spotlight-circle span {
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-width: 880px) {
+    section {
+        padding-top: 70px;
+    }
+    .spotlight-circle span {
+        font-size: 22px;
+    }
+
+    #spotlight-container {
+        margin-left: 100px;
+        margin-right: 100px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .spotlight-block {
+        min-width: 210px;
+        margin: 10px;
+    }
+}
+
+@media screen and (max-width: 725px) {
+    #spotlight-container {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .spotlight-block {
+        min-width: 33vw;
+    }
+}
