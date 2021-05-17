@@ -72,4 +72,9 @@ footer span {
     #legal-copyright {
         margin-top: 2vh;
     }
+
+    #copyright {
+        font-size: 10px;
+        color: gray;
+    }
 }
